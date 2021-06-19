@@ -9,8 +9,9 @@ use ray_tracing::grfx::vector::Vec3D;
 use std::rc::Rc;
 
 fn main() {
-    let width = 600;
-    let height = 400;
+    let scale = 3;
+    let width = 600 / scale;
+    let height = 400 / scale;
     let world = create_world();
     let pixels = render_world_pixels(world, width, height);
     let image = Image::from_colors(width, height, pixels);

@@ -33,7 +33,7 @@ impl Image {
     ///
     /// Important: This method call consumes/moves the Image.
     ///
-    /// Therefore it annot be used after this method is called.
+    /// Therefore it cannot be used after this method is called.
     ///
     pub fn show(self) {
         let event_loop = EventLoop::new();
